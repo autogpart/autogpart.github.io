@@ -42,7 +42,7 @@
 </head>
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
       <span aria-hidden="true"></span>
@@ -58,7 +58,7 @@
       </span>
       </a>
 
-      <!-- <div class="navbar-item has-dropdown is-hoverable">
+      <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">
           More Research
         </a>
@@ -76,12 +76,12 @@
             PhotoShape
           </a>
         </div>
-      </div> -->
+      </div>
 
     </div>
 
   </div>
-</nav>
+</nav> -->
 
 
 <section class="hero">
@@ -92,9 +92,11 @@
           <h1 class="title is-1 publication-title">AutoGPart: Intermediate Supervision Search for Generalizable 3D Part Segmentation</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://github.com/Meowuu7">Xueyi Liu</a><sup>1</sup>,</span>
+              <!-- <a href="https://github.com/Meowuu7">Xueyi Liu</a><sup>1</sup>,</span> -->
+              Xueyi Liu<sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://github.com/xxm19">Xiaomeng Xu</a><sup>1</sup>,</span>
+              <!-- <a href="https://github.com/xxm19">Xiaomeng Xu</a><sup>1</sup>,</span> -->
+              Xiaomeng Xu<sup>1</sup>,</span>
             <span class="author-block">
               <a href="http://anyirao.com">Anyi Rao</a><sup>2</sup>,
             </span>
@@ -110,7 +112,7 @@
             <span class="author-block"><sup>1</sup>Tsinghua University,</span>
             <span class="author-block"><sup>2</sup>The Chinese University of Hong Kong,</span>
             <span class="author-block"><sup>2</sup>MIT-IBM Watson AI Lab</span> 
-          </div>''
+          </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
@@ -154,14 +156,14 @@
                   </a>
               </span>
               <!-- Dataset Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://github.com/google/nerfies/releases/tag/0.1"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
                   <span>Data</span>
-                  </a>
+                  </a> -->
             </div>
 
           </div>
@@ -175,7 +177,7 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video id="teaser" autoplay muted loop height="100%">
-        <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/teaser.mp4"
+        <source src="figs/teaser.mp4"
                 type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
@@ -261,11 +263,12 @@
             optimal strategy since machines do not necessarily understand in the exact
             human way. Others try to use conventional task-agnostic approaches designed for
             domain generalization problems with no task prior knowledge considered.
-            AutoGPart builds a supervision space with geometric prior knowledge encoded,
+            To solve the above issues, we propose AutoGPart, a generic method enabling training generalizable 3D part
+            segmentation networks with the task prior considered. 
+            <span style="font-weight:bold">AutoGPart builds a supervision space with geometric prior knowledge encoded</span>,
             and lets the machine to search for the optimal supervisions from the space for
-            a specific segmentation task automatically.To solve the above issues, we
-            propose AutoGPart, a generic method enabling training generalizable 3D part
-            segmentation networks with the task prior considered. Extensive experiments on
+            a specific segmentation task automatically. 
+            Extensive experiments on
             three generalizable 3D part segmentation tasks are conducted to demonstrate the
             effectiveness and versatility of AutoGPart. We demonstrate that the performance
             of segmentation networks using simple backbones can be significantly improved
