@@ -302,6 +302,38 @@
   </div>
 </section>
 
+<!-- Problem overview -->
+<section class="section">
+  <div class="container is-max-widescreen">
+    <h2 class="title is-3">Problem Overview</h2>
+    <div class="columns">
+      <div class="column">
+        <p>AutoGPart searches for intermediate supervisions for a generalizable 3D part segmentation network. By training the network with searched features encoding correct part cues, the network could perform better when parsing an instance from a novel distribution. </p>
+      </div>
+    </div>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-three-fifths">
+        <!-- <video autoplay muted loop width="100%">
+          <source src="figs/groupvit_overview.mp4" type="video/mp4">
+        </video> -->
+        <img src="figs/overview-15.pdf" alt="">
+      </div>
+    </div>
+    
+    <h2 class="title is-3">GroupViT Architecture</h3>
+    <p> AutoGPart builds an intermediate supervision space based on prior knowledge of 3D segmentation tasks. The space contains all operations to generate supervision features from input geometry features and ground-truth labels. Then, we optimize the supervision space to fit it to a given part segmentation network via a ``propose, evaluate, and update'' approach. In each update cycle, an operation is first sampled to generate supervision features for each point in the shape. Then, it is evaluated by training the network together with the task-related supervision and the intermediate supervision. Finally, a reward value indicating the network's performance evaluated under a cross-validation process is used to update the intermediate supervision space. After that, a greedy search-like approach is performed to extract supervision features from the optimized space for further use.</p>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-fullwidth">
+        <video autoplay muted loop playsinline controls>
+          <source src="figs/website-source-method.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
 
 <section class="section">
   <div class="container is-max-desktop">
